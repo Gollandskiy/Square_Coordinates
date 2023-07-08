@@ -1,0 +1,18 @@
+﻿<Window x:Class="Square_Coordinates.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Square_Coordinates"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas x:Name="canvas">
+            <TextBlock Text="X Coordinate:" HorizontalAlignment="Center" Canvas.Top="50" VerticalAlignment="Top" Canvas.Left="10" FontSize="16"/>
+            <TextBox x:Name="txtX" TextChanged="txtX_TextChanged" Canvas.Left="17" Canvas.Top="76" HorizontalAlignment="Left" Height="15" VerticalAlignment="Center" Width="82"/>
+            <TextBlock Text="Y Coordinate:" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16"/>
+            <TextBox x:Name="txtY" TextChanged="txtY_TextChanged" HorizontalAlignment="Left" Height="14" VerticalAlignment="Top" Width="82" Canvas.Left="17" Canvas.Top="36" />
+            <Button x:Name="btn" Width="84" Height="70" Background="Red" Canvas.Left="358" Canvas.Top="182" BorderBrush="Black" BorderThickness="5" MouseDown="btn_MouseDown" MouseMove="btn_MouseMove" MouseUp="btn_MouseUp"/>
+        </Canvas>
+    </Grid>
+</Window>
